@@ -122,6 +122,7 @@ jobs:
         with:
           repository: Quackdoc/mpv-win32-cmake
           path: mpv-winbuild-cmake
+          ref: vulkan-test
       - name: Get Params
         run: |
           echo "sha=${{ fromJson(needs.params.outputs.params).sha }}" >> $GITHUB_ENV
